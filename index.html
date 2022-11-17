@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Semaforo Cool
+        </title>
+        <link href="/dist/output.css" rel="stylesheet"/>
+    </head>
+    <body class="bg-green-600">
+        <div class="relative text-3xl ">
+            <div class="absolute inset-0 h-screen flex">
+                <div class="m-auto flex flex-col ">
+                    <div class="m-10 p-10">
+                        <h1 class="text-[240px] text-center text-white" id="tiempo">00:00</h1>
+                    </div>
+                    <div class="flex flex-col  items-center" >
+                            <div class="flex flex-col m-8 p-4  ">
+                                <div class="m-5 p-4 rounded-lg bg-indigo-800 text-center text-white font-bold ">
+                                    <button id="boton1" >Iniciar</button>
+                                </div>
+                                <div class="m-5 p-4 rounded-lg bg-indigo-800 text-center text-white font-bold ">
+                                    <button id="boton2">Reiniciar</button>
+
+                                </div>
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <script src="semaforo.js"></script>
+    </body>
+</html>

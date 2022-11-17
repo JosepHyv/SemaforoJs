@@ -1,0 +1,14 @@
+.center{
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+}
+
+.border{
+    border-color: black;
+    border-style: inset;
+    border-collapse: separate;
+    padding: 1px;
+}

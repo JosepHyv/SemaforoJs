@@ -1,5 +1,9 @@
 const btn = document.getElementById('boton1');
 const btn2 = document.getElementById('boton2');
+const divbtn2 = document.getElementById('divbtn2');
+const modbtn2 = document.querySelector('.button');
+modbtn2.disabled = true;
+divbtn2.style.opacity = 0;
 
 const bcolores = [
     '#16A34A',
@@ -84,10 +88,14 @@ btn.addEventListener('click', function(event){
     {
         if(!llamadaChrono)
             llamadaChrono = setInterval(chronometro, 1000);
+            divbtn2.style.opacity = 0;
+            modbtn2.disabled = true;
     }
     else if (cosito == 'Pausar'){
         clearInterval(llamadaChrono);
         llamadaChrono = null;
+        divbtn2.style.opacity = 1;
+        modbtn2.disabled = false;
     }
     
     document.getElementById('boton1').innerHTML = contenidoBoton[statusBoton % 2];
@@ -104,5 +112,7 @@ btn2.addEventListener('click', function(event){
     mostrarTiempo(minutos,segundos);
     document.getElementById('boton1').innerHTML = 'Iniciar';
     statusBoton = 0;
+    divbtn2.style.opacity = 0;
+    modbtn2.disabled = true;
     
 });
